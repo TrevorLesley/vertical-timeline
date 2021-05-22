@@ -1,11 +1,13 @@
 * {
     box-sizing: border-box;
 }
-img {
-    max-width: 100%;
+
+.bottom-text {
+    bottom: 0;
     position: absolute;
-    opacity: 30%;
+    opacity: 100;
 }
+
 ul {
     padding: 0;
     list-style: none;
@@ -24,9 +26,11 @@ h1 {
 .timeline-content h1 {
     float: right;
 }
+
 h1.right {
     float: left;
 }
+
 .timeline-content {
     display: inline-block;
     content: '';
@@ -36,16 +40,19 @@ h1.right {
     width: 45%;
     /* margin-right: 20px; */
 }
-.image {
+.one-image {
     display: inline-block;
     content: '';
     background-color: whitesmoke;
+    /* opacity: 30%; */
     height: 250px;
     margin-top: 25px;
     width: 45%;
     position: relative;
     float: right;
-    background-image: url(https://static.wikia.nocookie.net/disneythehunchbackofnotredame/images/3/3f/970324_596548[…]70266_1828393195_n.jpg/revision/latest?cb=20140304052602);
+    background-image: url(https://static.wikia.nocookie.net/disneythehunchbackofnotredame/images/3/3f/970324_596548540370266_1828393195_n.jpg/revision/latest?cb=20140304052602);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
 }
 .timeline-event:nth-child(even) .timeline-content {
     float: right;
@@ -92,3 +99,8 @@ h1.right {
       position: relative;
   }
   
+  .card-title {
+      position: relative;
+      /* bottom: 50%; */
+      vertical-align: middle;
+  }
