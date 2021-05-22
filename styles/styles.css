@@ -8,6 +8,10 @@
     opacity: 100;
 }
 
+p {
+    margin: 15px;
+}
+
 ul {
     padding: 0;
     list-style: none;
@@ -97,10 +101,15 @@ h1.right {
   .timeline-content p {
       display: block;
       position: relative;
+      margin: 5%;
   }
   
   .card-title {
-      position: relative;
-      /* bottom: 50%; */
-      vertical-align: middle;
+      margin-top: 15%;
+  }
+
+  .my-button {
+      position: absolute;
+      bottom: 0;
+      clear: both;
   }
