@@ -9,7 +9,7 @@
 }
 
 p {
-    margin: 15px;
+    margin: 32px;
 }
 
 ul {
@@ -94,9 +94,9 @@ h1.right {
 .arrow-left {
     width: 0; 
     height: 0; 
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent; 
-    border-right:30px solid white; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-right: 25px solid white; 
   }
   .timeline-content p {
       display: block;
@@ -106,10 +106,17 @@ h1.right {
   
   .card-title {
       margin-top: 15%;
+      margin-left: 32px;
+      margin-bottom: 5px;
+      font-size: 25px;
   }
 
   .my-button {
       position: absolute;
       bottom: 0;
       clear: both;
+  }
+
+  h2 {
+      margin-left: 32px;
   }
