@@ -6,6 +6,8 @@
     bottom: 0;
     position: absolute;
     opacity: 100;
+    margin:32px;
+    height:50%;
 }
 
 p {
@@ -29,6 +31,7 @@ h1 {
 }
 .timeline-content h1 {
     float: right;
+    margin: 8%;
 }
 
 h1.right {
@@ -39,21 +42,26 @@ h1.right {
     display: inline-block;
     content: '';
     background-color: whitesmoke;
-    height: 250px;
-    margin-top: 25px;
-    width: 45%;
-    /* margin-right: 20px; */
+    height: 25%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 4%;
+    margin-right: 0%;
+    width: 40%;
+    justify-content: space-evenly;
+   
 }
 .one-image {
     display: inline-block;
     content: '';
     background-color: whitesmoke;
-    /* opacity: 30%; */
-    height: 250px;
-    margin-top: 25px;
-    width: 45%;
-    position: relative;
-    float: right;
+    height: 25%;
+    margin-right:4%;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    margin-left: 0%;
+    justify-content: space-evenly;
+    width: 40%;
     background-image: url(https://static.wikia.nocookie.net/disneythehunchbackofnotredame/images/3/3f/970324_596548540370266_1828393195_n.jpg/revision/latest?cb=20140304052602);
     background-size: 100% 50%;
     background-repeat: no-repeat;
@@ -82,7 +90,8 @@ h1.right {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-}
+}    
+
 .arrow-right {
     display: inline-block;
     width: 0;
@@ -90,33 +99,51 @@ h1.right {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-left: 25px solid white;
+    margin-bottom: 8%;
+    /* float:right; */
 }
 .arrow-left {
-    width: 0; 
-    height: 0; 
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left:50%;
     border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent; 
-    border-right: 25px solid white; 
+    border-bottom: 15px solid transparent;
+    border-right: 25px solid white;
   }
-  .timeline-content p {
-      display: block;
-      position: relative;
-      margin: 5%;
-  }
-  
-  .card-title {
-      margin-top: 15%;
-      margin-left: 32px;
-      margin-bottom: 5px;
-      font-size: 25px;
-  }
+.timeline-content p {
+    display: block;
+    position: relative;
 
-  .my-button {
-      position: absolute;
-      bottom: 0;
-      clear: both;
-  }
+}
 
-  h2 {
-      margin-left: 32px;
-  }
+.card-title {
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-bottom: 12%;
+    font-size: 25px;
+}
+
+.my-button {
+    /* position: absolute; */
+    bottom: 0;
+    clear: both;
+    display: block;
+    margin-top: 1%;
+}
+
+h2 {
+    margin-left: 32px;
+}
+
+.no-image:hover {
+    float: right;
+}
+
+.one-image:hover {
+    transform: scale(1.1);
+ }
+ .no-image:hover {
+     /* float: right; */
+     transform: scale(1.1);
+ }
