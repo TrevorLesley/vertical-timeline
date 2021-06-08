@@ -7,7 +7,8 @@
     position: absolute;
     opacity: 100;
     margin:32px;
-    height:50%;
+    height:20%;
+   
 }
 
 p {
@@ -26,16 +27,16 @@ body {
 h1 {
     background-color: #ff0043;
     color: white;
-    display: inline-flex;
+    /* display: inline-flex; */
     margin: 0;
-}
-.timeline-content h1 {
+    padding:2%;
     float: right;
-    margin: 8%;
+    font-size: large;
 }
 
 h1.right {
     float: left;
+   
 }
 
 .timeline-content {
@@ -62,13 +63,19 @@ h1.right {
     margin-left: 0%;
     justify-content: space-evenly;
     width: 40%;
+}
+
+.anime {
     background-image: url(https://static.wikia.nocookie.net/disneythehunchbackofnotredame/images/3/3f/970324_596548540370266_1828393195_n.jpg/revision/latest?cb=20140304052602);
-    background-size: 100% 50%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    height:150px;
+    /* margin:0%; */
 }
 .timeline-event:nth-child(even) .timeline-content {
     float: right;
     background-color: whitesmoke;
+    margin-left: 0%;
     /* margin-right: 20px; */
 }
 .timeline-event::after {
@@ -98,18 +105,19 @@ h1.right {
     height: 0;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 25px solid white;
+    border-left: 25px solid whitesmoke;
     margin-bottom: 8%;
+    margin-left:100%;
     /* float:right; */
 }
 .arrow-left {
     display: inline-block;
     width: 0;
     height: 0;
-    margin-left:50%;
+    margin-right:105%;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 25px solid white;
+    border-right: 25px solid purple;
   }
 .timeline-content p {
     display: block;
@@ -124,6 +132,13 @@ h1.right {
     font-size: 25px;
 }
 
+/* title in one image div */
+h2.image-title {
+    bottom: 0%;
+    /* border: solid blue; */
+    margin-top: 0%;
+}
+
 .my-button {
     /* position: absolute; */
     bottom: 0;
@@ -136,14 +151,38 @@ h2 {
     margin-left: 32px;
 }
 
-.no-image:hover {
-    float: right;
+.one-image:hover {
+   transform: scale(1.1);
 }
 
-.one-image:hover {
+.no-image:hover {
+    /* float: right; */
     transform: scale(1.1);
- }
- .no-image:hover {
-     /* float: right; */
-     transform: scale(1.1);
- }
+}
+
+
+@media screen and (max-width: 600px) {
+    .no-image {
+      float: right;
+      width: 80%;
+      margin-right:4%;
+      margin-bottom: 4%;
+      margin-top: 4%;
+      margin-left: 0%;
+    }
+
+    .one-image{
+        width: 80%;
+    }
+    .timeline::before {
+        /* float: left; */
+        left: 5%;
+    }
+
+    .arrow-left{
+        display: none;
+    }
+    .arrow-right {
+        display: none;
+    }
+  }
